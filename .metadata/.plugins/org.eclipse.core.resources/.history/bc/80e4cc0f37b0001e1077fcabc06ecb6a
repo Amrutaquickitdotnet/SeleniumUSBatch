@@ -1,0 +1,20 @@
+package com.java;
+
+public class Example_002 
+{
+	
+	//main execution point  Execution 
+	public static void main(String[] args) {
+		// Calculate the size of primitive data type byte 
+		//+ sign denotes concatination of 2 things
+		// java.lang (internal packages)
+		// . is used to access methods and properties related with class
+		System.out.println("size of byte is"+" : "+Byte.SIZE);
+		// 1 byte => numbers from -128 to 127 8 bit = 1 byte
+		
+		// Calculate size of short 
+		
+		System.out.println("Size of short is "+ ":"+Short.SIZE);
+		
+	}
+}

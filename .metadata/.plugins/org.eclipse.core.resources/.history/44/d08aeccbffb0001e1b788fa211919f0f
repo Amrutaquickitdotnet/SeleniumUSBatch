@@ -1,0 +1,21 @@
+package com.java;
+
+public class Example_005_IntegerDataType {
+
+	// main execution point Execution
+	public static void main(String[] args) {
+
+		//char => Only hold one character at a time 
+		
+		// Define character 
+		
+		char a = 'A';
+		System.out.println(a);
+		// "" is called as string // Sequence of character 
+		
+		char b = 94;
+		System.out.println(b);
+		
+
+	}
+}

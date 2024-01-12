@@ -1,0 +1,11 @@
+package com.java;
+
+public class Example_004_CharDataType {
+
+	// main execution point Execution
+	public static void main(String[] args) {
+
+		
+
+	}
+}

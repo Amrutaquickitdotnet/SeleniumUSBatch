@@ -1,0 +1,19 @@
+package com.java;
+
+public class Example_005_IntegerDataType {
+
+	// main execution point Execution
+	public static void main(String[] args) {
+
+		
+		int a = 12;
+		int b= 13;
+		int result;
+		
+		result = a+b;
+		System.out.println("The addition of two numbers is "+ result);
+		
+		
+
+	}
+}

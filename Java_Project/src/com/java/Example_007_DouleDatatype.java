@@ -1,0 +1,18 @@
+package com.java;
+
+public class Example_007_DouleDatatype {
+
+	// main execution point Execution
+	public static void main(String[] args) {
+
+	double d = 314.2f;
+			
+	System.out.println(d);
+	
+	// Float vs Double  Data Type 
+	
+	// Double is data type which is larger than a float data type 
+	// Both the number represent decimals, but float is 32 bits in size whereas double is 64 bits
+	
+	}
+}

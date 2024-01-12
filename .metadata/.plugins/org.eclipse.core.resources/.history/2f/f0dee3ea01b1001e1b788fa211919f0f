@@ -1,0 +1,12 @@
+package com.java;
+
+public class Example_007_DouleDatatype {
+
+	// main execution point Execution
+	public static void main(String[] args) {
+
+	double d = 345.567;
+			
+	System.out.println(d);
+	}
+}
