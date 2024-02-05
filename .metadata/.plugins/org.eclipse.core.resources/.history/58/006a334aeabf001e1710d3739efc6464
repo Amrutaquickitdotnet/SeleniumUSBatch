@@ -1,0 +1,29 @@
+package com.java;
+//import com.visible.*;
+
+public class Example_013_ArrayConcept {
+
+	public static void main(String[] args) {
+// Represent Array 
+		
+		
+		int[] numbers = {12,13,14,15};
+		
+		
+		//Access the Element of array 
+		
+		
+		System.out.println(numbers[0]);
+		
+		System.out.println(numbers[1]);
+		
+		System.out.println(numbers[2]);
+		
+		System.out.println(numbers[3]);
+	
+	}
+	
+	
+	
+	
+}

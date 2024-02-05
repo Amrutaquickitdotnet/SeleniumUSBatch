@@ -1,0 +1,29 @@
+package com.selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Example006_SearchKeywordusingList {
+
+	static WebDriver driver;// Declared Webdriver as Global variable
+
+	public static void main(String[] args) {
+		launchbrowser();
+	
+	}
+
+	public static void launchbrowser() {
+		driver = new ChromeDriver();
+		driver.get("https://www.practo.com");
+		driver.manage().window().maximize();
+	}
+
+	public static void getAllSerachResults() {
+
+	
+	}
+
+}

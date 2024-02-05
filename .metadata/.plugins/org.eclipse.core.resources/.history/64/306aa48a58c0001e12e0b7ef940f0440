@@ -1,0 +1,78 @@
+package com.selenium;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Example007_Sorting {
+
+	static WebDriver driver;// Declared Webdriver as Global variable
+
+	public static void main(String[] args) {
+		launchbrowser();
+		sorting();
+
+	}
+
+	public static void launchbrowser() {
+		driver = new ChromeDriver();
+		driver.get("http://20.127.21.109/#/home/device");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//input[@formcontrolname='username']")).sendKeys("devendar.malothu@birlasoft.com");
+		driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys("AutoTest@123");
+		driver.findElement(By.xpath("//button[@class='addButton']")).click();
+		
+	}
+
+	public static void sorting() {
+
+	
+		driver.findElement(By.xpath("//thead/tr[1]/th[1]/div[1]/span[1]/div[1]/div[2]/div[2]/div[2]")).click();
+		List<WebElement> tdList = driver.findElements(By.xpath("//table[@id='matTable']/tbody/tr/td[1]"));
+		String strArry [] = new String[tdList.size()];
+		for(int i=0;i < tdList.size();i++)
+		{
+			strArry[i]=tdList.get(i).getText();
+		}
+		/*
+		 * Compare the String
+		 */
+		boolean sortFunctionality = true;
+		outer: 
+		for(int i=0;i < strArry.length;i++)
+		{
+			for(int j=i+1;j < i;j++)
+			{
+				int result = strArry[j].compareTo(strArry[i]);
+				if(!(result > 0))
+				{
+						System.out.println("Data in the Table is not SORTED::" +strArry[j]+":::"+ strArry[i]);
+						sortFunctionality=false;
+						break outer;
+				}
+				else
+				{
+					 System.out.println("Data in the Table is SORTED::" +strArry[j]+":::"+ strArry[i]);
+				}
+			}
+		}
+		
+		
+		if(sortFunctionality)
+		{
+			System.out.println("SORT Functionality is working");
+		}
+		else
+		{
+			System.out.println("SORT Functionality is not working");
+		}
+		
+	}
+		
+	}
+

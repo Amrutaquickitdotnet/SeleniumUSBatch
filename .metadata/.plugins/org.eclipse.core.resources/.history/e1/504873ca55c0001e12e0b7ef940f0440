@@ -1,0 +1,39 @@
+package com.selenium;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Example007_Sorting {
+
+	static WebDriver driver;// Declared Webdriver as Global variable
+
+	public static void main(String[] args) {
+		launchbrowser();
+		serachKeyword();
+
+	}
+
+	public static void launchbrowser() {
+		driver = new ChromeDriver();
+		driver.get("http://20.127.21.109/#/auth/login");
+		driver.manage().window().maximize();
+	}
+
+	public static void sorting() {
+
+		List<WebElement> nameList = driver.findElements(PRODUCT_NAME); 
+		List<String> names = nameList.stream() 
+		                             .map(n -> n.getText()) 
+		                             .collect(Collectors.toList());         
+		List<String> sortedNames = names;           
+		Collections.sort(sortedNames);                                                 
+		boolean areSorted =  names.equals(sortedNames); 
+		}
+
+	}
+
