@@ -6,6 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="E:/SeleniumClass2024/JarFiles/selenium-java-4.16.1/auto-service-annotations-1.1.1.jar"/>
 	<classpathentry kind="lib" path="E:/SeleniumClass2024/JarFiles/selenium-java-4.16.1/byte-buddy-1.14.5.jar"/>
 	<classpathentry kind="lib" path="E:/SeleniumClass2024/JarFiles/selenium-java-4.16.1/checker-qual-3.33.0.jar"/>

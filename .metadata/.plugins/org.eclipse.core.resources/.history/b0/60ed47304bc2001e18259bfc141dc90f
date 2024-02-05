@@ -1,0 +1,35 @@
+package com.selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Example_11_CheckboxAutomation {
+
+	static WebDriver driver;
+
+	public static void main(String[] args) throws InterruptedException {
+
+		launchbrowser();
+		
+		
+		
+	}
+
+	public static void launchbrowser() throws InterruptedException {
+		driver = new ChromeDriver();
+		driver.get("https://www.plus2net.com/jquery/msg-demo/radio6.php");
+		driver.manage().window().maximize();
+
+		
+
+	}
+
+	
+	
+	
+
+}
