@@ -20,6 +20,8 @@ public class Example_11_CheckboxAutomation {
 		
 		selectionofCheckbox();
 		
+	
+		
 	}
 
 	public static void launchbrowser() throws InterruptedException {
