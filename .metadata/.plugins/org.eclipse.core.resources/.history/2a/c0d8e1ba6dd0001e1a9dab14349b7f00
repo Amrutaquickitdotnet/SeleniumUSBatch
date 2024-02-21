@@ -1,0 +1,40 @@
+package com.java;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ListInterfaceExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//List interface 
+		
+		//how to declare List interface
+		
+		// table contains data => more than 1  WebElement 
+		
+		
+		List<String> names = new ArrayList<String>();
+		
+		
+		// creating arrayList
+		
+		//add element in arrayList
+		
+		names.add("Rajkumar");
+		names.add("Vamsi");
+		names.add("Naman");
+		names.add("Dhara");
+		names.add("Preeti");
+		names.add("Rajkumar");
+		
+		// traversing list 
+		
+	Iterator  itr    =	names.iterator();
+	
+	
+	
+	}
+
+}

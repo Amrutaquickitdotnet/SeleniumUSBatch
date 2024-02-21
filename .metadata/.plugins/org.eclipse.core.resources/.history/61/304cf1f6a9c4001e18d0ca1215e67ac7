@@ -1,0 +1,27 @@
+package com.java;
+//import com.visible.*;
+
+public class Example_018_StringManipulation {
+
+	
+	// String manipulation 
+	
+	// The operation perform on string
+	public static void main(String[] args) {
+		String s = "preeti"; // String literal
+		String s1 = "PREeti";
+		
+		System.out.println("String in upper Case"+":"+s.toUpperCase());// Converting my String case into upper level
+		System.out.println("String in Lower Case"+":"+s1.toLowerCase());
+		//compare String in 3 ways 
+		//1 by using equals(), equalsIgnoreCase()
+		//2 By Using == Operator
+//		3. By compareTo()
+		System.out.println("Comparison with using equals()"+":"+ s.equals(s1));// false
+		System.out.println("Comparison with using equals()"+":"+ s.equalsIgnoreCase(s1));
+	}
+	}
+	
+	
+	
+	

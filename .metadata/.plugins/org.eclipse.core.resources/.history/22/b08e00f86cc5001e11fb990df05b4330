@@ -1,0 +1,29 @@
+package com.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Example_008_ValidationMessage {
+
+	WebDriver driver;
+	public static void main(String[] args) {
+	
+		
+
+	}
+	
+	
+	public void launchbrowser() {
+		driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		
+	}
+	
+	
+	public void validateTextforUsername() {
+		
+		
+	}
+
+}
