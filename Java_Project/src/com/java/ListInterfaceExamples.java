@@ -8,7 +8,7 @@ public class ListInterfaceExamples {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//List interface 
+     //List interface 
 		
 		//how to declare List interface
 		
@@ -33,6 +33,7 @@ public class ListInterfaceExamples {
 		names.add("Rajkumar");//5
 		names.add(null);
 		names.add("");
+		names.add("Vamsi");
 		
 		
 		System.out.println("Adding data in name1");
