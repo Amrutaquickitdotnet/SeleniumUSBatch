@@ -28,7 +28,7 @@ public class ReadData {
 
 		Properties prop = new Properties();
 
-		prop.load(fs);
+		prop.load(fs);// merging files into the object of properties class
 
 		driver = new ChromeDriver();
 
