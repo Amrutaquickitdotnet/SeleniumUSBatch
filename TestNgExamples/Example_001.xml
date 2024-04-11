@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Example_001" verbose="1">
+  <test name="com.examples">
+    <classes>
+       <class name= "com.examples.Example_001"/>
+    </classes>
+  </test>
+
+</suite>

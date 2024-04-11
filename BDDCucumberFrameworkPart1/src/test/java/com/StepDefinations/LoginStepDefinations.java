@@ -16,10 +16,11 @@ public class LoginStepDefinations {
 	WebDriver driver;
 
 	@Given("user is on home page")
-	public void user_is_on_home_page() {
+	public void user_is_on_home_page() throws Exception {
 
 		driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(4000);
 		driver.manage().window().maximize();
 	}
 
